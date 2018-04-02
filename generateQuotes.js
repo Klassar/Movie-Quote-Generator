@@ -44,8 +44,8 @@ document.getElementById('quoteGenerator-btn').addEventListener('click', function
 		document.getElementById('source').innerHTML = quotes[randomQuote].source;
 	}
 	let randomColor = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' +
-											 (Math.floor(Math.random() * 256)) + ',' +
-											 (Math.floor(Math.random() * 256)) + ')';
+			      (Math.floor(Math.random() * 256)) + ',' +
+			      (Math.floor(Math.random() * 256)) + ')';
 	document.getElementById('mainContainer').style.backgroundColor = randomColor;		
 });
 
