@@ -1,3 +1,4 @@
+// Array containing a list of quotes, both the quote itself and its source.
 const quotes = [
 	{
 		"quote": "I shall call him squishy and he shall be mine and he shall be my squishy.",
@@ -36,16 +37,23 @@ const quotes = [
 		"source": "Napoleon Dynamite - 2004"
 	},																			
 ]
-	
+
+// Add an click event listener to our button
 document.getElementById('quoteGenerator-btn').addEventListener('click', function() {
+	// After click begin looping through array of quotes
 	for (let i = 0; i < quotes.length; i++) {
+		// Generates the ramdom quote
 		const randomQuote = Math.floor(Math.random() * quotes.length);
+		// Disaplys that random quotes **quote** to our html <p> with the ID of 'quote'
 		document.getElementById('quote').innerHTML = '&#8220; ' + quotes[randomQuote].quote + ' &#8222;';
+		// Disaplys that random quotes **source** to our html <p> with the ID of 'source'
 		document.getElementById('source').innerHTML = quotes[randomQuote].source;
 	}
-	let randomColor = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' +
-			      (Math.floor(Math.random() * 256)) + ',' +
-			      (Math.floor(Math.random() * 256)) + ')';
+	// Define variable to hold three random rgba color values	
+	let randomColor = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' +	// Generates first color number value from 0 - 256
+			      (Math.floor(Math.random() * 256)) + ',' +		// Generates second color number value from 0 - 256
+			      (Math.floor(Math.random() * 256)) + ')';		// Generates thrid color number value from 0 - 256	
+	// Applies ramdon rgba color value to our html body with ID of 'mainContainer'
 	document.getElementById('mainContainer').style.backgroundColor = randomColor;		
 });
 
