@@ -1,2 +1,2 @@
 # Movie-Quote-Generator
-A simple project to demonstrate javascript math and looping methods
+[Movie-Quote-Generator](https://github.com/Klassar/Movie-Quote-Generator)
