@@ -1,7 +1,7 @@
 # Movie-Quote-Generator
 [Movie-Quote-Generator](https://github.com/Klassar/Movie-Quote-Generator) is a simple JS project that allows users to randomly display new quotes/bg color whenever a click event is triggered.
 
-# Quickstart
+# Quick Start
 #### Command Line
 ```
 git clone https://github.com/Klassar/Movie-Quote-Generator
